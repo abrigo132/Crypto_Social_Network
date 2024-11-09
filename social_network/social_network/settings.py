@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_USER_MODEL = "users.models.User"
+AUTH_USER_MODEL = "users.models.Users"
 
 # Application definition
 

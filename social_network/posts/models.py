@@ -1,3 +1,12 @@
 from django.db import models
+from django.utils import timezone
 
-# Create your models here.
+
+
+class Posts(models.Model):
+    title = models.CharField(max_length=20)
+    body = models.CharField(max_length=5000)
+    created_at = models.DateTimeField(default=timezone.now())
+    like_count = models.IntegerField(blank=True)
+    dislike_count = models.IntegerField(blank=True)
+    reposts_count = models.IntegerField(blank=True)
